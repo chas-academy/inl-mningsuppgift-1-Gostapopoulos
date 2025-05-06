@@ -31,17 +31,13 @@ let groupToShow = "arbete"
 function showContacts(contactBook, groupToShow) {
   // Rör ej denna kod
 
-  let contactsInGroup = ""
-
   // Loopar igenom alla kontakter och jämför grupp
   for (let contact of contactBook.contacts) {
     if (contact.group === groupToShow) {
-      contactsInGroup += `${contact.name} ${contact.phone}`
+      return `Namn: ${contact.name}, Telefon: ${contact.phone}`
     }
   }
-  return contactsInGroup // här ska sträng med namn och tekefonnummer visas i form av string interpolation
 }
-
 // Rör ej denna kod
 showContacts(contactBook, groupToShow)
 module.exports = { showContacts }
