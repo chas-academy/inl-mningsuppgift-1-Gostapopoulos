@@ -36,8 +36,7 @@ function showContacts(contactBook, groupToShow) {
   // Loopar igenom alla kontakter och jämför grupp
   for (let contact of contactBook.contacts) {
     if (contact.group === groupToShow) {
-      contactsInGroup += `${contact.name} ${contact.phone}
-`
+      contactsInGroup += `${contact.name} ${contact.phone}`
     }
   }
   return contactsInGroup // här ska sträng med namn och tekefonnummer visas i form av string interpolation
