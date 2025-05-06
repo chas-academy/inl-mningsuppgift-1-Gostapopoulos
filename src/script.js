@@ -26,7 +26,7 @@ const contactBook = {
 }
 
 // Ange en grupp
-let groupToShow = "arbete" // Ändra denna rad för att visa andra grupper
+let groupToShow = "arbete"
 
 function showContacts(contactBook, groupToShow) {
   // Rör ej denna kod
